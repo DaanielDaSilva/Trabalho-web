@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria FMU</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/imagens/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    
+     <header onclick="toggleSidebar()" class="header" id="header">
+
+        <button class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+        </button>
+            
+             <div>
+                <img src="assets/imagens/fmu.logo.png" alt="Logo FMU" class="logo_header" id="loading">
+            </div>
+
+            <div class="nagivation_header" id="nagivation_header">
+                <button class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                </button>
+                
+                <a href="#" class="active">Home</a>
+                <a href="#">Sobre nós</a>
+                <a href="#">Contato</a>
+                <a href="#">Cadastro</a>
+            </div> 
+    </header>
+    
+    <main  tabindex="0" onclick="closeSidebar()" class="content" id="content">
+
+        <div class="imgcontainer">
+            <img src="assets/imagens/foto_main.jpeg" alt="Foto do site">
+            <button>faça seu pedido</button>
+        </div>
+
+    </main>
+
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
