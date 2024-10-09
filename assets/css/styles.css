@@ -31,6 +31,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
 .header{
@@ -39,6 +40,7 @@ body{
     height: 120px;
     justify-content: space-between;
     padding: 0 10%;
+
 }
 
 .nagivation_header {
@@ -96,6 +98,7 @@ main {
     position: relative;
     width: 100%;
     height: 100%;
+    top: -79px;
 }
 
 .imgcontainer img {
