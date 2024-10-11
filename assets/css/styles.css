@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
     --color-white: #fff;
     --color-vinho: #830D23;
@@ -18,6 +17,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-vinho);
     color: var(--color-white);
+    margin: 0;
+    padding: 0;
 }
 
 .logo_header{
@@ -37,7 +38,8 @@ body{
 .header{
     background-color: var(--color-vinho2);
     box-shadow: 1px 1px 4px var(--color-vinho3);
-    height: 120px;
+    height: 140px;
+    width: 100%;
     justify-content: space-between;
     padding: 0 10%;
 
@@ -85,52 +87,56 @@ body{
     display: none;
 }
 
-main {
-    
-    height: 100vw; /* O main ocupará toda a altura da janela do navegador */
-    width: 99vw;  /* O main ocupará toda a largura da janela */
+.container {
+    width: 100%;
+    height: 810px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
 }
 
-.imgcontainer {
+.container img {
+    width: 100%;
+    height: 820px;
+}
+
+.frente {
+    width: 200px;
+    height: 100px;
+    position: absolute; 
+    text-align: center;
+}
+
+.frente a {
     position: relative;
-    width: 100%;
-    height: 100%;
-    top: -79px;
-}
-
-.imgcontainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.imgcontainer button > a {
-    font-weight: bold;
-    letter-spacing: 0.1em;
+    display: inline-block;
+    padding: 12px 24px;
     border: none;
-    border-radius: 1.1em;
+    font-size: 16px;
     background-color: var(--color-vinho4);
+    border-radius: 100px;
+    font-weight: 600;
+    color: var(--color-white);
+    box-shadow: 0 0 0 2px #ffffff20;
     cursor: pointer;
-    color: white;
-    padding: 1em 2em;
-    transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s, letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
-    box-shadow: 13px 13px 10px #1c1c1c, -13px -13px 10px #262626;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.imgcontainer button > a:hover {
-    box-shadow: var(--hover-shadows);
-}
-
-button > a {
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.frente a:hover {
+    box-shadow: 0 0 0 5px var(--color-vinho2);
+    color: var(--color-white);
+    scale: 0.95s;
+  }
+
+
+.box {
+    background-color: #ddd;
+    border: 1px solid green;
+    width: 60px;
+    height: 60px;
 }
 
 @media screen and (max-width: 768px){
